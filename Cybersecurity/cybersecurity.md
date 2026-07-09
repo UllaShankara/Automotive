@@ -17,7 +17,9 @@ Pillars of cybersecurity
 **Non-Repudiation**: Ensures that the sender cannot deny that the sent message was not sent by the sender. Receiver will have the proof that the message was sent by which sender. Techniques include digital signature.
 **Availability**: Ensures that authorized users have constant access to data and resources. Techniques include redundancy and failover systems.
 
-<img width="940" height="123" alt="image" src="https://github.com/user-attachments/assets/62eb7b53-f3c6-48d6-b66d-6ebe1ca7ca2d" />
+<img width="940" height="123" alt="image" src="https://github.com/user-attachments/assets/03095872-a41b-430f-b556-5124cd9258ad" />
+
+
 
 **Symmetric cryptography**:  
 Symmetric Cryptography is an encryption system where the sender and receiver of a message use same key to encrypt and decrypt messages.
@@ -25,13 +27,16 @@ Key is nothing but the logic/mathematical expression/numeric value/shift operati
 Symmetric encryption is highly efficient (more speed and less resource needed). Encryption is stronger with the longer key size.
 Encryption and decryption keys need to be same, achieving this at the sender and receiver end in difficult. Key exchange must be made securely. Longer key size will take more time and resource for computation.
 
-<img width="780" height="213" alt="image" src="https://github.com/user-attachments/assets/bd1f939b-67e9-4b06-aba3-06f9beaea18d" />
+<img width="780" height="213" alt="image" src="https://github.com/user-attachments/assets/b63051fb-85df-4a35-a6a4-df4d2b869b46" />
+
 
  
 Different primitives used in symmetric encryption are Data encryption standard (DES), Revest Cipher (RC), Advanced Encryption Standard (AES). Among these AES is most popular primitive used for symmetric encryption.
 Adavnaced encryption standard: AES is a highly trusted encryption algorithm which is used to secure data by converting it into an unreadable format. It is developed by the National Institute of Standards and Technology (NIST) in 2001. AES encryption uses different key lengths (128, 192, or 256 bits) to provide strong protection against unauthorized access. AES is a block cipher, which means it takes 128 bits as input and outputs 128 bits of encrypted cipher text. 
 Different modes used in symmetric encryption are Electronic Code Book (EBC), Cipher Block Chain (CBC), Counter Mode (CM). 
-<img width="448" height="343" alt="image" src="https://github.com/user-attachments/assets/ddfe1861-c3ed-44f2-9a99-5e686baa673c" /> <img width="374" height="347" alt="image" src="https://github.com/user-attachments/assets/3bbb2659-67ce-446c-84bc-264297b3f71a" />
+
+<img width="448" height="343" alt="image" src="https://github.com/user-attachments/assets/a16059f9-2587-415a-bee1-e3b173afed2f" />
+<img width="374" height="347" alt="image" src="https://github.com/user-attachments/assets/7d5baac1-3110-4df8-a624-4eea7ef34aaa" />
 
        
 Electronic Code Book (ECB)                                                            Cipher Block Chain (CBC) 
@@ -42,30 +47,41 @@ Exchanging the key publicly is difficult. There are different methods to exchang
 Larger data takes more time and resource for computation. This primitive is suitable for lesser data length as it takes more time for encryption and decryption. 
 Commonly used algorithms are Rivest Shamir Adleman (RSA), Elliptic Curve Cryptography (ECC), Diffie-Hellman and others.
 
-<img width="762" height="213" alt="image" src="https://github.com/user-attachments/assets/a1877d6a-fb4f-4746-a43c-b803cd5d5186" />
+
+<img width="762" height="213" alt="image" src="https://github.com/user-attachments/assets/1988d207-fddb-4ddc-a7ea-3f68c6acf825" />
+
 
 **Hashing**: 
 Hashing is a one-way mathematical function that scrambles data into a string of nondescript text that cannot be reversed or decoded.
 Hashing is a way to keep sensitive information and data including passwords, messages, and documents secure. Once the content is converted via a hashing algorithm, the resulting value (hash code) is unreadable to humans and extremely difficult to decrypt, even with the help of advanced technology.
 There is no key involved in hashing. Different algorithms are SHA 256, SHA 512. Size of the hash output depends on algorithm used. Any size of input data is given for hashing, generated output length will be always fixed to algorithm size used. It follows avalanche effect where a minor change in input will lead to a massive change in the output.
 
-<img width="586" height="184" alt="image" src="https://github.com/user-attachments/assets/a06ad78a-0156-4a40-b685-2cb85c99e242" />
+
+<img width="586" height="184" alt="image" src="https://github.com/user-attachments/assets/9a9b952d-9019-45b2-a88f-9b5d4162569a" />
+
 
 **Salting** is a process of adding a unique value at the end of the data before hashing. Usually this is done for storing passwords and confirming them.
 
 
 **Digital signature**: 
 A digital signature is a cryptographic technique used to verify the authenticity, integrity, and non-repudiation of a message or document. It ensures that the message was created by a known sender and that it has not been altered during transmission by anyone. Signing is a process where the sender will use its private key to encrypt the hash value generated. Receiver will use sender’s public key to decrypt the signed value and verify the signature.
-<img width="704" height="314" alt="image" src="https://github.com/user-attachments/assets/383abbff-2b7f-4bae-b50c-fbb41ab235c1" />
+
+
+<img width="704" height="314" alt="image" src="https://github.com/user-attachments/assets/62e70dd8-8ee5-46d4-9e56-6d76a7c566b8" />
+
 
 
 **Message Authentication Code (MAC)**:
 Message Authentication Code (MAC) is a cryptographic method used for integrity and authentication. For symmetric encryption, cipher-based MAC (CMAC) is commonly used. OEMs may provision keys statically at vehicle production or distribute keys dynamically via a cloud server. Usually in this primitive symmetric encryption is used to generate the CMAC of the data to be sent. 
-<img width="792" height="264" alt="image" src="https://github.com/user-attachments/assets/bc58ab17-3ec2-4e5e-922c-308d8f74e24f" />
+
+<img width="792" height="264" alt="image" src="https://github.com/user-attachments/assets/247c8dbe-a72e-49c7-a201-81eb4fa7b1c7" />
+
 
  
 Summary of all the above cryptographic methods and the supported features is represented in the below table.
-<img width="820" height="274" alt="image" src="https://github.com/user-attachments/assets/ad680579-5c7c-4dfe-ba63-eed8b3df7b12" />
+
+<img width="820" height="274" alt="image" src="https://github.com/user-attachments/assets/1d8acb24-7b82-4e44-ba75-349b68163adf" />
+
 
 
  
@@ -100,7 +116,9 @@ Boot Process Flow:
 3.	Secondary bootloader verification: Primary bootloader verifies secondary bootloader verification and chain of trust validation is continued.
 4.	Operating System/Application Verification: Final bootloader verifies OS kernel and applications. Each component's hash measured and stored in secure registers is verified and passed to the next stage.
 5.	Runtime verification: Periodic integrity checks during execution is done.
-<img width="904" height="152" alt="image" src="https://github.com/user-attachments/assets/e495da7b-32ec-45d1-9244-d0df7d3430d6" />
+
+<img width="904" height="152" alt="image" src="https://github.com/user-attachments/assets/208d0bcb-a2fc-4a87-b725-cd1aee1943e3" />
+
 
 Some of the tests that can be performed to check secure boot:
 Boot Integrity Verification: Confirm that the ECU validates digital signature of its firmware before loading. Test by loading valid signed firmware and verify successful boot. As part of negative test load unsigned or tampered firmware to ensure boot is blocked.
@@ -150,7 +168,9 @@ Response: [0x67 0x02]
 If the key is incorrect, the ECU will respond with a negative acknowledgment indicating that access has been denied.
 6. Performing Authorized Operations
 Once access is granted, the diagnostic tool can perform the authorized operations, such as reprogramming the ECU or accessing restricted diagnostic functions. After completing these tasks, the session may revert to a lower security level, or the tool may need to go through the Security Access process again if additional secure functions are required.
-<img width="552" height="492" alt="image" src="https://github.com/user-attachments/assets/347ee8b7-3ccd-4384-a0aa-224945918b66" />
+
+<img width="552" height="492" alt="image" src="https://github.com/user-attachments/assets/6cf796c6-40c4-4f5e-9298-1a9c99ddab89" />
+
 
 Device authentication 0x29:
 The UDS service Authentication (0x29) is used by the ECU to identify the client and provide the relevant access to diagnostic resources, based on the client’s ’role’. The access to these diagnostic resources can be limited in time or bound to certain vehicles or ECUs.
@@ -167,14 +187,21 @@ Validate 29 service by certificate modification or invalid certificates.
 **Secure On-board Communication (SecOC)**:
 Considering normal CAN messages which can be easily read and understood by CAN analysers. Also, same messages can be fed into the network by capturing the CAN logs even without analysing. To overcome these attacks SecOC was introduced, where a freshness value and authentication is added to the message before transmission.
 Authentication and integrity protection of sensitive data is necessary to be protected for safe functionality of the vehicle systems. This ensures that received data comes from the right ECU and has the correct value. 
-<img width="658" height="345" alt="image" src="https://github.com/user-attachments/assets/d330c092-3b8a-45b3-9856-5d1c2cd2eb31" />
+
+<img width="658" height="345" alt="image" src="https://github.com/user-attachments/assets/32b389d2-b4b4-43aa-80eb-0434d0ea19fd" />
+
 
 The SecOC module as described provides functionality necessary to verify the authenticity and freshness of PDU based communication between ECUs within the vehicle architecture. The approach requires both the sending ECU and the receiving ECU to implement a SecOC module. To provide message freshness, the SecOC module on the sending and receiving side get freshness from an external Freshness Manager for each uniquely identifiable Secured I-PDU. On the sender side, the SecOC module creates a Secured I-PDU by adding authentication information to the outgoing Authentic I-PDU. The authentication information comprises of an Authenticator Message Authentication Code (MAC) and optionally a Freshness Value. Regardless of the Freshness Value is or is not included in the Secure I-PDU payload, the Freshness Value is considered during generation of the Authenticator. When using a Freshness Counter instead of a Timestamp, the Freshness Counter should be incremented by the Freshness Manager prior to providing the authentication information to the receiver side. On the receiver side, the SecOC module checks the freshness and authenticity of the Authentic I-PDU by verifying the authentication information that has been appended by the sending side SecOC module. To verify the authenticity and freshness of an Authentic I-PDU, the Secured I-PDU provided to the receiving side SecOC should be the same Secured I-PDU provided by the sending side SecOC and the receiving side SecOC should have knowledge of the Freshness Value used by the sending side SecOC during creation of the Authenticator.
 In normal CAN message transmission, ID, data is transmitted. In secure messages CAN frames data and ID is transmitted along with freshness and authentication as show below.
-<img width="403" height="120" alt="image" src="https://github.com/user-attachments/assets/4baa8ada-9bec-4cc9-875d-aecc6f1b4d40" />
+
+<img width="403" height="120" alt="image" src="https://github.com/user-attachments/assets/6fb411bd-5949-4919-b7c9-1fd237ffb732" />
+
  
 Generation of MAC, freshness and forming a message from sender ECU and verification of MAC, freshness from receiver ECU is show below.
-<img width="623" height="610" alt="image" src="https://github.com/user-attachments/assets/46270170-72d5-4163-bb8f-8c287a9caa88" />
+
+
+<img width="623" height="610" alt="image" src="https://github.com/user-attachments/assets/52c26cde-5148-49fc-8af4-d3ce08f44264" />
+
  
 **Freshness value generation**: 
 Freshness values are nothing but a monotonously incrementing counter value that keeps changing for every transmission of message to avoid replay attack in the network. 
@@ -206,7 +233,9 @@ Use password-based or token-based JTAG locking to prevent unauthorized access.
 Employ HSM for secure key management and cryptographic operations.
 Integrate Secure Boot and firmware encryption to maintain software integrity.
 It equally important to implement Secure Life Cycle in an ECU as shown below.
-<img width="854" height="203" alt="image" src="https://github.com/user-attachments/assets/a2088258-07a3-406f-b73a-36b2c71e610b" />
+
+<img width="854" height="203" alt="image" src="https://github.com/user-attachments/assets/8cec68a9-7297-42ee-8484-11b22fe383c1" />
+
  
 Testing secure debug:
 Attempt debug access before authentication and verify denial.
@@ -219,7 +248,10 @@ Certain secure debug implementations have timeout for debug port unlock (e.g., I
 Over-The-Air (OTA) software updates are now an integral part of many consumer electronics products. Apps on smartphones and tablets are supplied with updates practically every day. Applications as well as the firmware of the devices can thus be updated continuously and easily directly at the end user.
 In the automotive sector, software updates "Over-The-Air" have already been implemented in some cases, but the functionality is then usually restricted to certain ECUs or parts of the vehicle software. Due to the increasing complexity of vehicle software and its importance for functionality, the need for software updates is growing - even for safety-relevant applications or functions. 
 OTA can be used for entire software update of a target ECU, delta changes update, new features update, bug fixes remotely by avoiding the customer visit the dealer/workshop.
-<img width="760" height="315" alt="image" src="https://github.com/user-attachments/assets/e69988d6-be4b-44db-a691-191059239c4e" />
+
+
+<img width="760" height="315" alt="image" src="https://github.com/user-attachments/assets/47e6851c-8357-4870-b837-688e8eeaa6ce" />
+
  
 OEM or the supplier responsible for OTA updates will manage all the fleet data. Software updates/firmware updates are pushed into vehicle by using the Vehicle Identification Number (VIN). Each car would have a unique VIN number and the data of the vehicle and the software that is running in each vehicle would be maintained by the fleet management. 
 For any OTA update to a specific vehicle/number vehicles can be done remotely. When an update in need to a vehicle, campaigns are created by the fleet management and pushed to vehicle via cloud to the target vehicle’s target ECU. Once the vehicle is connected to internet, connectivity module (telematics) receives an update regarding the created campaign. Updated software/patch is downloaded to central storage and notified to the OTA master ECU. This ECU decides which ECU need to be updated with the received files.
@@ -230,7 +262,10 @@ Verification: The verification process is implementation specific and shall assu
 Activation: The activation process describes the actual switch of the ECU boot partition. 
 Rollback: During the rollback process all ECU and user data from the previous running software must be restored. After the rollback has finished there must be no difference to the ECU software and user data compared to before the whole update procedure has been started.
 UDS services 0x34 request download, 0x36 Transfer data, 0x37 Transfer exit are commonly used to update the target ECU by OTA master ECU. 
-<img width="797" height="401" alt="image" src="https://github.com/user-attachments/assets/0a68c173-8bb4-49a4-b272-021ecc15ce4b" />
+
+
+<img width="797" height="401" alt="image" src="https://github.com/user-attachments/assets/e97712f3-fde6-4d7d-b2d7-42f124f76248" />
+
  
 Testing OTA as an ECU supplier: 
 Checking the correct sequence of OTA flow from OTA master to target ECU. 
@@ -248,7 +283,10 @@ Check rest of functionality of target ECU is completely available during OTA upd
 Hardware Security Module (HSM) or Trusted Platform Module (TPM) provides secure cryptographic key storage and operations. These are dedicated secure processors separate from the main ECU processor. 
 The Secure Hardware Extension (SHE) is a specification originally defined by the E-Safety Vehicle Intrusion protected Applications (EVITA) project to provide a standardized lightweight security module within microcontrollers. SHE is specifically designed to perform core cryptographic operations and manage secure storage for automotive applications.
 The Hardware Security Module (HSM) is a more advanced and versatile security solution. It is a dedicated co-processor within the microcontroller or as a standalone hardware unit, designed to perform robust cryptographic operations.
-<img width="619" height="380" alt="image" src="https://github.com/user-attachments/assets/320c3e93-207e-44f2-85c9-0cffc1c3ec16" />
+
+
+<img width="619" height="380" alt="image" src="https://github.com/user-attachments/assets/ed9da2a9-4a09-407c-81da-9bbc153fa168" />
+
  
 SHE is an on-chip extension to any given microcontroller. It is intended to move the control over cryptographic keys from the software domain into the hardware domain and therefore protect those keys from software attacks. SHE provides several memory slots to store keys and provides a feasibility to update these stored keys with additional checks through flags & counter values.
 Different Types of Keys Which Will be Stored in the SHE  
@@ -289,7 +327,8 @@ Vehicle fleet attacks: Corporate vehicle fleets might be targeted by attacks aim
 Penetration testing, also known as ethical hacking, is a crucial component in the field of automotive cybersecurity. The primary purpose of penetration testing is to identify and mitigate cybersecurity vulnerabilities that may not have been considered during the design phase. This process involves simulating cyberattacks to expose weaknesses in the system, allowing for their remediation before they can be exploited by attackers.
 As discussed in the testing strategies below table represents some of the entry points where attacks can happen,
 
-<img width="797" height="961" alt="image" src="https://github.com/user-attachments/assets/bf594859-2699-4981-bddc-7e411e670ceb" />
+
+<img width="720" height="870" alt="image" src="https://github.com/user-attachments/assets/6d0c3d9c-6809-4425-a92e-eebd5b429e01" />
 
 
 **Fuzz**:
@@ -311,10 +350,16 @@ Step 3: Impact Assessment. Each identified threat is assessed for its potential 
 Step 4: Attack Feasibility Assessment. This step evaluates how feasible it is for an attacker to conduct each identified threat. ISO/SAE 21434 provides several approaches for assessing attack feasibility, with the attack potential-based approach being the most used. This evaluates factors such as elapsed time (how long the attack takes), specialist expertise required, knowledge of the target, window of opportunity, and equipment needed. The result is a feasibility rating: low, medium, high, or extremely high.
 Step 5: Risk Determination and Treatment. The last step combines the impact rating and Attack Feasibility rating to decide the overall risk level for each threat. ISO/SAE 21434 defines risk levels from 1 (lowest) to 5 (highest), decided by a risk matrix. For each risk, the team then selects a Risk Treatment decision: avoid (drop the threat source), reduce (implement cybersecurity controls), share (transfer risk to another party), or accept (acknowledge and document the residual risk). Risk reduction decisions generate Cybersecurity Goals, which flow into cybersecurity requirements for the development phase.
 Example:
-<img width="940" height="238" alt="image" src="https://github.com/user-attachments/assets/33d2262d-a177-4728-8754-6f6a77f7dca6" />
+
+
+<img width="940" height="238" alt="image" src="https://github.com/user-attachments/assets/da952d5a-5f3a-4762-b342-34e2a61504bc" />
+
 
 Security implementation and testing can be categorized as shown below.
-<img width="591" height="320" alt="image" src="https://github.com/user-attachments/assets/1bddc11c-987b-4ab0-92ec-fcaa08d93fb7" />
+
+
+<img width="591" height="320" alt="image" src="https://github.com/user-attachments/assets/986c37cc-1769-43b3-83e4-180de326e4e4" />
+
 
 **Intrusion Detection System (IDS)**:
 Automotive Intrusion Detection Systems (IDS) are specialized security solutions designed to monitor and protect vehicles from unauthorized access and cyber threats. These systems analyse network traffic and activities within the vehicle's components to identify potential security breaches.
@@ -324,7 +369,9 @@ Network IDS are deployed in Central gateway ECU/Domain Controllers which monitor
 Host IDS are deployed in individual ECUs that monitors system calls, processes, file integrity and detects privilege escalation, malware, rootkits. NIDS is designed particularly for those running on rich operating systems like Linux, Android, or QNX. Rather than monitoring network packets, it examines system calls, process behaviour, file integrity, and runtime memory to detect compromise from within. Since the detection system is implemented at individual ECU level security is higher.
 IDS implementation in an automotive system is as show below.
 
-<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/ad498639-cac6-484d-8f62-dbbd2761dde9" />
+
+
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/7290a19d-f08c-4e3d-a937-9e4d4ded7f2c" />
 
 
 
