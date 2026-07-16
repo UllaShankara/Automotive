@@ -2,6 +2,7 @@
 
 Automotive cybersecurity is the practice of protecting all electronic systems used in, or connected to, an automotive vehicle from unauthorized access, manipulation, malicious modification, or damage across the entire vehicle life cycle. Protected systems include electronic devices, data, networks, control algorithms, and software.
 There is no system that is 100% secure, with enough given time and computation power any system can be cracked. Security is all about making the system complicated/difficult to crack.
+
 Cryptography
 Cryptography is a science and practice of securing information by transforming it into an unreadable format (ciphered text), which can only be understood by those who have right key.
 Pillars of cybersecurity 
@@ -374,16 +375,6 @@ IDS implementation in an automotive system is as show below.
 <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/7290a19d-f08c-4e3d-a937-9e4d4ded7f2c" />
 
 
-
-
-Reference:
-Cryptography: Specification of Cryptography
-SHE: Specification of Secure Hardware Extensions, 
-https://www.bing.com/ck/a?!&&p=535854c8d54fb1423e00cf0e4d344a82775f81e4adef85bcc306889558a1ddb0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1cb099e1-dc55-6698-3c33-8ef6ddd8674d&psq=SHE+update+in+automotive+ecu&u=a1aHR0cHM6Ly9zdXBwb3J0LnZlY3Rvci5jb20vc3lzX2F0dGFjaG1lbnQuZG8_c3lzX2lkPTUzNGQyNWViODc1NDg1OTBiOWYyMzM3NzBjYmIzNTUw
-Secure boot: SWAD: Secure Boot (AC) - SHM HMI System - Intranet Home
-SecOC: Specification of Secure Onboard Communication Protocol, 
-https://infohub.automotive.elektrobit.com/download/attachments/401934697/5A10Z3MAAA020___3MAAF0807_E.pdf?version=1&modificationDate=1720155052756&api=v2
-OTA: Explanation of Firmware Over-The-Air
 
 
 
