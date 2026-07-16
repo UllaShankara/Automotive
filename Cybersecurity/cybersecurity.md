@@ -3,7 +3,6 @@
 Automotive cybersecurity is the practice of protecting all electronic systems used in, or connected to, an automotive vehicle from unauthorized access, manipulation, malicious modification, or damage across the entire vehicle life cycle. Protected systems include electronic devices, data, networks, control algorithms, and software.
 There is no system that is 100% secure, with enough given time and computation power any system can be cracked. Security is all about making the system complicated/difficult to crack.
 
-Cryptography
 Cryptography is a science and practice of securing information by transforming it into an unreadable format (ciphered text), which can only be understood by those who have right key.
 Pillars of cybersecurity 
 -	Confidentiality 
